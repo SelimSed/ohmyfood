@@ -4,59 +4,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&family=Shrikhand&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f172084e7d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="public/css/style.css">
     <title>Ohmyfood!</title>
 </head>
 <body>
-    <header>
+    <header class="header">
         <div class="header__logo">
             <img src="public/img/ohmyfood.png" alt="logo ohmyfood">
         </div>
     </header>
-    <main>
+    <main class="main">
         <div class="main__location">
-            <i></i>
+            <i class="fa-solid fa-location-dot"></i>
             <p>Paris, Belleville</p>
         </div>
         <div class="main__description">
             <h1>Réservez le menu qui vous convient</h1>
             <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+            <button class="main__button" type="button">Explorer nos restaurants</button>
         </div>
-        <button class="main__button" type="button">Explorer nos restaurants</button>
     </main>
-    <section>
+    <nav class="nav">
         <h2>Fonctionnement</h2>
         <div class="fonct__button">
-            <i></i>
+            <i class="fa-solid fa-mobile-screen-button"></i>            
             <p>Choisissez un restaurant</p>
         </div>
         <div class="fonct__button">
-            <i></i>
+            <i class="fa-solid fa-list"></i>
             <p>Composez votre menu</p>
         </div>
         <div class="fonct__button">
-            <i></i>
+            <i class="fa-sharp fa-solid fa-store"></i>
             <p>Dégustez au restaurant</p>
         </div>
-    </section>
-    <section>
+    </nav>
+    <section class="section">
         <h2>Restaurants</h2>
         <div class="resto__card">
-            <img src="public/img/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût">
+            <a href="la_palette_du_gout.html">
+                <img src="public/img/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût">
+                <h3>La palette du goût</h3>
+                <p>Ménilmontant</p>
+                <i></i>
                 <div class="resto__card__new">
                     <p>Nouveau</p>
                 </div>
-            <h3>La palette du goût</h3>
-            <p>Ménilmontant</p>
-            <i></i>
+            </a>
         </div>
         <div class="resto__card">
             <img src="public/img/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée">
-                <div class="resto__card__new">
-                    <p>Nouveau</p>
-                </div>
             <h3>La note enchantée</h3>
             <p>Charonne</p>
             <i></i>
+            <div class="resto__card__new">
+                <p>Nouveau</p>
+            </div>
         </div>
         <div class="resto__card">
             <img src="public/img/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Cité Rouge">
@@ -66,19 +73,26 @@
         </div>
         <div class="resto__card">
             <img src="public/img/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens">
-                <div class="resto__card__new">
-                    <p>Nouveau</p>
-                </div>
             <h3>Le délice des sens</h3>
             <p>Folie-Méricourt</p>
             <i></i>
         </div>
     </section>
-    <footer>
+    <footer class="footer">
         <ul>
             <h4>ohmyfood</h4>
-            <a href="#"><li class="footer__list1">Proposer un restaurant</li></a> 
-            <a href="#"><li class="footer__list1">Devenir partenaire</li></a>
+                <a href="#">
+                    <div class="footer__link">
+                        <i class="fa-solid fa-utensils"></i>
+                        <li class="footer__list1">Proposer un restaurant</li>
+                    </div>
+                </a> 
+                <a href="#">
+                    <div  class="footer__link">
+                        <i class="fa-solid fa-handshake-angle"></i>
+                        <li class="footer__list1">Devenir partenaire</li>
+                    </div>
+                </a>
             <a href="#"><li class="footer__list2">Mentions légales</li></a>
             <a href="#"><li class="footer__list2">Contact</li></a>
         </ul>

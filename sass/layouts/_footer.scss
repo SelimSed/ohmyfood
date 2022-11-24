@@ -1,0 +1,25 @@
+.footer{
+    background-color: $colour-gray-black;
+    h4{
+        color: white;
+    }
+    ul{
+        margin: 0;
+    }
+    ul li{
+        color: white;
+        list-style-type: none;
+        text-decoration: none;
+        font-size: 13px;
+        padding-bottom: 5px;
+    }
+    i{
+        color: white;
+        font-size: 10px;
+        padding-right: 10px;
+    }
+    &__link{
+        display: flex;
+        align-items: center;
+    }
+}

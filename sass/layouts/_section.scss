@@ -1,0 +1,12 @@
+.section{
+    background-color: $colour-gray;
+    padding: 10px;
+}
+
+.resto__card{
+    @include resto__card
+}
+
+.resto__card__new{
+    @include resto__card__new
+}
