@@ -1,6 +1,28 @@
 .nav{
     padding: 10px;
     background-color: white;
+    &__numbers--color{
+        color: white;
+        font-size: 12px;
+        background-color: $colour-primaire;
+        border-radius: 100%;
+        padding: 3px;
+        padding-right: 7px;
+        padding-left: 7px;
+        &__1{
+            position: absolute;
+            top: 17px; left: -10px;
+        }
+        &__2{
+            position: absolute;
+            top: 17px; left: -10px;
+        }
+        &__3{
+            position: absolute;
+            top: 17px; left: -10px;
+        }
+    }
+
 }
 
 .fonct__button{

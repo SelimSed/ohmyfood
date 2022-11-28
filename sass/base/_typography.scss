@@ -13,12 +13,18 @@ button{
     margin: 0%;
 }
 
-.nav__title{
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    padding-top: 25px;
-    padding-bottom: 20px;
-    margin: 0%;
+.nav{
+    &__title{
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        padding-top: 25px;
+        padding-bottom: 20px;
+        margin: 0%;
+    }
+    &__numbers{
+        color: $colour-primaire;
+        font-size: 30px;
+    }
 }
 
 .resto{
