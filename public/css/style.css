@@ -184,13 +184,15 @@ h4 {
 .footer h4 {
   color: white;
 }
+.footer a {
+  text-decoration: none;
+}
 .footer ul {
   margin: 0;
 }
 .footer ul li {
   color: white;
   list-style-type: none;
-  text-decoration: none;
   font-size: 13px;
   padding-bottom: 5px;
 }
