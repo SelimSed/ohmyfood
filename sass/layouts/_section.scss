@@ -21,7 +21,9 @@
 
 .resto__carte{
     background-color: $colour-gray;
-    padding: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
     border-radius: 20px 20px 0px 0px;
     z-index: 1;
     position: relative;
@@ -48,7 +50,7 @@
     background-color: $colour-secondaire;
     font-size: 13px;
     color: white;
-    margin: 30px;
+    margin-top: 40px;
     padding: 15px;
     background-image: linear-gradient(to top, $colour-primaire, $colour-secondaire);
     border-radius: 20px 20px 20px 20px;

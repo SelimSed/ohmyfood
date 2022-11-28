@@ -8,6 +8,7 @@ html {
 
 body {
   margin: 0;
+  background-color: #f7f7f7;
 }
 
 body {
@@ -150,6 +151,7 @@ h4 {
 
 .nav {
   padding: 10px;
+  background-color: white;
 }
 
 .fonct__button {
@@ -241,7 +243,9 @@ h4 {
 
 .resto__carte {
   background-color: #f7f7f7;
-  padding: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 15px;
   border-radius: 20px 20px 0px 0px;
   z-index: 1;
   position: relative;
@@ -266,7 +270,7 @@ h4 {
   background-color: #FF79DA;
   font-size: 13px;
   color: white;
-  margin: 30px;
+  margin-top: 40px;
   padding: 15px;
   background-image: linear-gradient(to top, #9356DC, #FF79DA);
   border-radius: 20px 20px 20px 20px;
@@ -285,6 +289,7 @@ h4 {
 }
 .footer h4 {
   color: white;
+  margin-bottom: 10px;
 }
 .footer a {
   text-decoration: none;
