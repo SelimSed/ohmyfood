@@ -5,7 +5,7 @@ button{
     font-family: 'Roboto', sans-serif;
 }
 
-h1{
+.main__description__title{
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     padding-left: 30px;
@@ -13,7 +13,7 @@ h1{
     margin: 0%;
 }
 
-h2{
+.nav__title{
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     padding-top: 25px;
@@ -21,9 +21,45 @@ h2{
     margin: 0%;
 }
 
-h3{
-    font-family: 'Roboto', sans-serif;
-    font-size: 15px;
+.resto{
+    &__card{
+        &__title{
+            font-family: 'Roboto', sans-serif;
+            font-size: 15px;
+        }
+    }
+    &__carte{
+        &__title{
+            font-family: 'Shrikhand', cursive;
+        }
+        &__menu{
+            &__title{
+                text-transform: uppercase;
+                font-family: 'Roboto', sans-serif;
+                font-size: 15px;
+                font-weight: 100;
+                width: 40px;
+                padding-bottom: 5px;
+                border-bottom: 3px solid $colour-tertiaire;
+            }
+            &__bloc__text{
+                font-size: 16px;
+                &--2{
+                    font-family: 'Roboto', sans-serif;
+                    font-size: 13px;
+                    font-weight: 100;
+                }
+                &--3{
+                    font-family: 'Roboto', sans-serif;
+                    font-size: 13px;
+                    font-weight: 500;
+                    position: absolute;
+                    top: 15px; right: 20px;
+                    margin-block-start: none;
+                }
+            }
+        }
+    }
 }
 
 h4{

@@ -2,6 +2,10 @@ html {
   min-width: 320px;
 }
 
+* {
+  margin: 0;
+}
+
 body {
   margin: 0;
 }
@@ -14,7 +18,7 @@ button {
   font-family: "Roboto", sans-serif;
 }
 
-h1 {
+.main__description__title {
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   padding-left: 30px;
@@ -22,7 +26,7 @@ h1 {
   margin: 0%;
 }
 
-h2 {
+.nav__title {
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   padding-top: 25px;
@@ -30,9 +34,38 @@ h2 {
   margin: 0%;
 }
 
-h3 {
+.resto__card__title {
   font-family: "Roboto", sans-serif;
   font-size: 15px;
+}
+.resto__carte__title {
+  font-family: "Shrikhand", cursive;
+}
+.resto__carte__menu__title {
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 100;
+  width: 40px;
+  padding-bottom: 5px;
+  border-bottom: 3px solid #99E2D0;
+}
+.resto__carte__menu__bloc__text {
+  font-size: 16px;
+}
+.resto__carte__menu__bloc__text--2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-weight: 100;
+}
+.resto__carte__menu__bloc__text--3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  margin-block-start: none;
 }
 
 h4 {
@@ -55,8 +88,22 @@ h4 {
   text-align: center;
 }
 
+.header {
+  padding: 5px;
+}
+.header__back {
+  position: absolute;
+  top: 20px;
+  padding-left: 20px;
+}
+.header__back i {
+  font-size: 20px;
+  color: #353535;
+}
 .header__logo {
+  display: flex;
   text-align: center;
+  justify-content: center;
 }
 .header__logo img {
   width: 150px;
@@ -176,6 +223,29 @@ h4 {
 .resto__card__new p {
   font-size: 13px;
   font-weight: 900;
+}
+
+.resto__img {
+  object-fit: cover;
+}
+.resto__img img {
+  width: 100%;
+}
+
+.resto__carte {
+  background-color: #f7f7f7;
+  padding: 15px;
+  border-radius: 20px 20px 0px 0px;
+  z-index: 1;
+  position: relative;
+  top: -50px;
+}
+.resto__carte__menu__bloc {
+  position: relative;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  border-radius: 10px 10px 10px 10px;
+  padding-left: 10px;
 }
 
 .footer {

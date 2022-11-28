@@ -10,3 +10,28 @@
 .resto__card__new{
     @include resto__card__new
 }
+
+.resto__img{
+    object-fit: cover;
+    img{
+        width: 100%;
+    }
+}
+
+.resto__carte{
+    background-color: $colour-gray;
+    padding: 15px;
+    border-radius: 20px 20px 0px 0px;
+    z-index: 1;
+    position: relative;
+    top: -50px;
+    &__menu{
+        &__bloc{
+            position: relative;
+            background-color: white;
+            box-shadow: $shadow;
+            border-radius: 10px 10px 10px 10px;
+            padding-left: 10px;
+        }
+    }
+}
