@@ -32,6 +32,10 @@ button{
         &__title{
             font-family: 'Shrikhand', cursive;
         }
+        &__coeur{
+            font-size: 25px;
+            padding-right: 10px;
+        }
         &__menu{
             &__title{
                 text-transform: uppercase;
@@ -41,9 +45,12 @@ button{
                 width: 40px;
                 padding-bottom: 5px;
                 border-bottom: 3px solid $colour-tertiaire;
+                margin-bottom: 10px;
+                margin-top: 20px;
             }
             &__bloc__text{
                 font-size: 16px;
+                padding-bottom: 5px;
                 &--2{
                     font-family: 'Roboto', sans-serif;
                     font-size: 13px;
@@ -54,7 +61,7 @@ button{
                     font-size: 13px;
                     font-weight: 500;
                     position: absolute;
-                    top: 15px; right: 20px;
+                    top: 30px; right: 20px;
                     margin-block-start: none;
                 }
             }

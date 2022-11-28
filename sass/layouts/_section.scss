@@ -2,9 +2,10 @@
     background-color: $colour-gray;
     padding: 10px;
 }
-
-.resto__card{
-    @include resto__card
+.resto{
+    &__card{
+        @include resto__card
+    }
 }
 
 .resto__card__new{
@@ -25,13 +26,36 @@
     z-index: 1;
     position: relative;
     top: -50px;
+    &__title{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
     &__menu{
         &__bloc{
             position: relative;
             background-color: white;
             box-shadow: $shadow;
             border-radius: 10px 10px 10px 10px;
-            padding-left: 10px;
+            padding: 10px;
+            margin-bottom: 10px;
         }
     }
+}
+
+.resto__button{
+    background-color: $colour-secondaire;
+    font-size: 13px;
+    color: white;
+    margin: 30px;
+    padding: 15px;
+    background-image: linear-gradient(to top, $colour-primaire, $colour-secondaire);
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: $shadow;
+    border: none;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    justify-content: center;
 }
