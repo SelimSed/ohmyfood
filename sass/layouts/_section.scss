@@ -59,9 +59,22 @@
 }
 @media (min-width: 1024px){
     .resto__carte{
-        max-width: 600px;
+        max-width: 1000px;
         margin-left: auto;
         margin-right: auto;
+        box-shadow: $shadow;
+        &__menu{
+            display: flex;
+            justify-content: center;
+            &__ligne{
+                width: 300px;
+                margin-right: 10px;
+            }
+            &__bloc{
+                display: flex;
+                flex-direction: column;
+            }
+        }
     }
 }
 .resto__button{
