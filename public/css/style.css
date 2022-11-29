@@ -8,7 +8,6 @@ html {
 
 body {
   margin: 0;
-  background-color: #f7f7f7;
 }
 
 body {
@@ -61,16 +60,16 @@ button {
   margin-bottom: 10px;
   margin-top: 20px;
 }
-.resto__carte__menu__bloc__text {
+.resto__carte__menu__ligne__text {
   font-size: 16px;
   padding-bottom: 5px;
 }
-.resto__carte__menu__bloc__text--2 {
+.resto__carte__menu__ligne__text--2 {
   font-family: "Roboto", sans-serif;
   font-size: 13px;
   font-weight: 100;
 }
-.resto__carte__menu__bloc__text--3 {
+.resto__carte__menu__ligne__text--3 {
   font-family: "Roboto", sans-serif;
   font-size: 13px;
   font-weight: 500;
@@ -273,6 +272,12 @@ h4 {
   width: 100%;
 }
 
+@media (min-width: 600px) {
+  .resto__img img {
+    object-fit: cover;
+    max-height: 400px;
+  }
+}
 .resto__carte {
   background-color: #f7f7f7;
   padding-left: 15px;
@@ -289,7 +294,7 @@ h4 {
   justify-content: space-between;
   margin-top: 10px;
 }
-.resto__carte__menu__bloc {
+.resto__carte__menu__ligne {
   position: relative;
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
@@ -298,6 +303,21 @@ h4 {
   margin-bottom: 10px;
 }
 
+@media (min-width: 600px) and (max-width: 1023px) {
+  .resto__carte {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  }
+}
+@media (min-width: 1024px) {
+  .resto__carte {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 .resto__button {
   background-color: #FF79DA;
   font-size: 13px;
