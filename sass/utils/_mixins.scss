@@ -8,6 +8,7 @@
     border-radius: 20px 20px 20px 20px;
     box-shadow: $shadow;
     border: none;
+    cursor: pointer;
 }
 
 @mixin main__description{
@@ -27,6 +28,7 @@
     margin-bottom: 20px;
     margin-right: 15px;
     position: relative;
+    cursor: pointer;
     &:hover{
         background-color: $colour-primaire-hover;
         i{

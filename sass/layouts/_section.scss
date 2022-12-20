@@ -40,12 +40,49 @@
     }
     &__menu{
         &__ligne{
-            position: relative;
-            background-color: white;
-            box-shadow: $shadow;
-            border-radius: 10px 10px 10px 10px;
-            padding: 10px;
-            margin-bottom: 10px;
+                position: relative;
+                background-color: white;
+                box-shadow: $shadow;
+                border-radius: 10px 10px 10px 10px;
+                margin-bottom: 10px;
+                display: flex;
+                justify-content: space-between;
+                width: 290px;
+                height: 59px;
+                margin-right: auto;
+                margin-left: auto;
+                cursor: pointer;
+                &:hover{
+                    .resto__carte__menu__ligne__check{
+                    width: 50px;
+                    transition: 0.3s;
+                    i{
+                    font-size: 14px;
+                    background-color: white;
+                    transition: 0.4s;
+                    rotate: 720deg;
+                    }
+                    }
+                }
+            &__left{
+                padding: 10px;
+            }
+            &__check{
+                background-color: $colour-tertiaire;
+                width: 0px;
+                border-radius: 0px 10px 10px 0px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: 0.3s;
+                i{
+                    color: $colour-tertiaire;
+                    font-size: 0px;
+                    background-color: transparent;
+                    border-radius: 50%;
+                    padding: 2px;
+                }
+            }
         }
     }
 }
@@ -55,6 +92,8 @@
         margin-left: auto;
         margin-right: auto;
         box-shadow: $shadow;
+        padding-bottom: 30px;
+        border-radius: 20px 20px 20px 20px;
     }
 }
 @media (min-width: 1024px){
@@ -63,16 +102,21 @@
         margin-left: auto;
         margin-right: auto;
         box-shadow: $shadow;
+        padding-bottom: 30px;
+        border-radius: 20px 20px 20px 20px;
         &__menu{
             display: flex;
             justify-content: center;
             &__ligne{
-                width: 300px;
+                &__left{
                 margin-right: 10px;
+                }
             }
             &__bloc{
                 display: flex;
                 flex-direction: column;
+                margin-left: 10px;
+                margin-right: 10px;
             }
         }
     }
@@ -82,6 +126,7 @@
     font-size: 13px;
     color: white;
     margin-top: 40px;
+    margin-right: 0%;
     padding: 15px;
     background-image: linear-gradient(to top, $colour-primaire, $colour-secondaire);
     border-radius: 20px 20px 20px 20px;
@@ -91,4 +136,7 @@
     padding-right: 40px;
     display: flex;
     justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
 }

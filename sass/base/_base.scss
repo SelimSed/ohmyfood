@@ -6,4 +6,10 @@ html{
 }
 body{
     margin: 0;
+    @media (max-width: 600px){
+        background-color: $colour-gray;
+    }
+}
+button{
+    align-items: center;
 }
