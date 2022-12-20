@@ -45,6 +45,10 @@ button{
                 background: linear-gradient(to top, $colour-primaire, $colour-secondaire);
                 -webkit-text-fill-color: transparent;
                 -webkit-background-clip: text;
+                opacity: 0;
+                &:hover{
+                opacity: 1;
+                }
             }
         }
         &__menu{
