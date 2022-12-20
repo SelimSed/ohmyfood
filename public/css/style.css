@@ -58,6 +58,11 @@ button {
   font-size: 25px;
   padding-right: 10px;
 }
+.resto__carte__coeur--solid i {
+  background: linear-gradient(to top, #9356DC, #FF79DA);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
 .resto__carte__menu__title {
   text-transform: uppercase;
   font-family: "Roboto", sans-serif;

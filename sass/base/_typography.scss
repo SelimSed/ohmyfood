@@ -41,6 +41,11 @@ button{
         &__coeur{
             font-size: 25px;
             padding-right: 10px;
+            &--solid i{
+                background: linear-gradient(to top, $colour-primaire, $colour-secondaire);
+                -webkit-text-fill-color: transparent;
+                -webkit-background-clip: text;
+            }
         }
         &__menu{
             &__title{
