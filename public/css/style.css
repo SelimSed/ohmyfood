@@ -71,14 +71,23 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+  visibility: visible;
+  animation: opening;
+  animation-fill-mode: forwards;
+  animation-delay: 1.5s;
+  animation-duration: 0.5s;
 }
 
-.loader {
-  display: flex;
-  margin-top: 50%;
-  margin-bottom: 50%;
+@keyframes opening {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
 }
-
 body {
   font-family: "Roboto", sans-serif;
 }
