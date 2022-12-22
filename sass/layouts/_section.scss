@@ -52,6 +52,10 @@
                 margin-right: auto;
                 margin-left: auto;
                 cursor: pointer;
+                visibility: visible;
+                animation: fade;
+                animation-delay: 0.2s;
+                animation-duration: 2s;
                 &:hover{
                     .resto__carte__menu__ligne__check{
                     width: 50px;
@@ -64,6 +68,17 @@
                         }
                     }
                 }
+                @keyframes fade{
+                    0%{                        
+                        opacity: 0;
+                        top: 10px;
+                    }
+                    100%{
+                        opacity: 1;
+                        top: 0px;
+                    }
+                }
+                
             &__left{
                 padding: 10px;
             }
