@@ -21,13 +21,23 @@ button{
         padding-bottom: 20px;
         margin: 0%;
         margin-left: 20px;
+        background-color: white;
+        max-width: 1000px;
     }
     &__numbers{
         color: $colour-primaire;
         font-size: 30px;
     }
 }
-
+.section__title{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    margin: 0%;
+    margin-left: 20px;
+    background-color: $colour-gray;
+}
 .resto{
     &__card{
         &__title{

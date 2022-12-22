@@ -111,10 +111,22 @@ button {
   padding-bottom: 20px;
   margin: 0%;
   margin-left: 20px;
+  background-color: white;
+  max-width: 1000px;
 }
 .nav__numbers {
   color: #9356DC;
   font-size: 30px;
+}
+
+.section__title {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  padding-top: 25px;
+  padding-bottom: 20px;
+  margin: 0%;
+  margin-left: 20px;
+  background-color: #f7f7f7;
 }
 
 .resto__card__title {
@@ -279,6 +291,9 @@ h4 {
   .nav {
     display: flex;
     justify-content: center;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -320,6 +335,15 @@ h4 {
   background-color: #f7f7f7;
   padding: 10px;
 }
+@media (min-width: 600px) {
+  .section {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: center;
+  }
+}
 
 .resto__card {
   width: 100%;
@@ -355,6 +379,14 @@ h4 {
   padding-bottom: 10px;
   padding-left: 10px;
   padding-top: 5px;
+}
+@media (min-width: 600px) {
+  .resto__card {
+    min-width: 400px;
+    max-width: 500px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }
 
 .resto__card__new {

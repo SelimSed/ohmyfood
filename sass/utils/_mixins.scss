@@ -81,6 +81,12 @@
         padding-left: 10px;
         padding-top: 5px;
     }
+    @media (min-width: 600px){
+        min-width: 400px;
+        max-width: 500px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 }
 
 @mixin resto__card__new{
