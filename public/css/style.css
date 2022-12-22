@@ -201,6 +201,10 @@ h4 {
   border: none;
   cursor: pointer;
 }
+.main__button:hover {
+  filter: brightness(120%);
+  box-shadow: rgba(0, 0, 0, 0.54) 0px 5px 15px;
+}
 
 .main__description {
   text-align: center;
@@ -388,6 +392,14 @@ h4 {
     margin-right: 10px;
   }
 }
+.resto__card__coeur {
+  position: absolute;
+  top: 170px;
+  left: 450px;
+}
+.resto__card__coeur i {
+  font-size: 25px;
+}
 
 .resto__card__new {
   color: #368b6e;
@@ -543,6 +555,10 @@ h4 {
   margin-left: auto;
   margin-right: auto;
   cursor: pointer;
+}
+.resto__button:hover {
+  filter: brightness(120%);
+  box-shadow: rgba(0, 0, 0, 0.54) 0px 5px 15px;
 }
 
 .footer {

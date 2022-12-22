@@ -9,6 +9,10 @@
     box-shadow: $shadow;
     border: none;
     cursor: pointer;
+    &:hover{
+        filter: brightness(120%);
+        box-shadow: $shadow-hover;
+    }
 }
 
 @mixin main__description{
@@ -86,6 +90,14 @@
         max-width: 500px;
         margin-left: 10px;
         margin-right: 10px;
+    }
+    &__coeur{
+        position: absolute;
+        top: 170px;
+        left: 450px;
+        i{
+            font-size: 25px;
+        }
     }
 }
 
