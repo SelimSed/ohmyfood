@@ -95,8 +95,31 @@
         position: absolute;
         top: 170px;
         left: 450px;
-        i{
+        .fa-heart-empty{
             font-size: 25px;
+            padding-right: 10px;
+        }
+        .fa-heart-solid{
+            font-size: 25px;
+            padding-right: 10px;
+            transform: scale(0);
+        }
+
+        .fa-heart-solid{
+                background: linear-gradient(to top, $colour-primaire, $colour-secondaire);
+                -webkit-text-fill-color: transparent;
+                -webkit-background-clip: text;
+                opacity: 0;
+            }
+        .fa-stack:hover{
+                .fa-heart-empty{
+                    opacity: 0;                
+                }
+                .fa-heart-solid{
+                    opacity: 1;
+                    transform: scale(1);
+                    transition:0.4s;
+                }
         }
     }
 }
