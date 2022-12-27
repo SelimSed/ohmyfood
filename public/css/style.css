@@ -141,20 +141,23 @@ button {
   padding-right: 10px;
 }
 .resto__carte .fa-heart-solid {
+  font-size: 25px;
+  padding-right: 10px;
+  transform: scale(0);
+}
+.resto__carte .fa-heart-solid {
   background: linear-gradient(to top, #9356DC, #FF79DA);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   opacity: 0;
-}
-.resto__carte .fa-stack:hover {
-  transition: ease-in-out 0.6s;
 }
 .resto__carte .fa-stack:hover .fa-heart-empty {
   opacity: 0;
 }
 .resto__carte .fa-stack:hover .fa-heart-solid {
   opacity: 1;
-  transition: ease-in-out 0.6s;
+  transform: scale(1);
+  transition: 0.4s;
 }
 .resto__carte__menu__title {
   text-transform: uppercase;

@@ -53,6 +53,11 @@ button{
             font-size: 25px;
             padding-right: 10px;
         }
+        .fa-heart-solid{
+            font-size: 25px;
+            padding-right: 10px;
+            transform: scale(0);
+        }
 
         .fa-heart-solid{
                 background: linear-gradient(to top, $colour-primaire, $colour-secondaire);
@@ -61,13 +66,13 @@ button{
                 opacity: 0;
             }
         .fa-stack:hover{
-                transition:ease-in-out 0.6s;
                 .fa-heart-empty{
-                    opacity: 0;
+                    opacity: 0;                
                 }
                 .fa-heart-solid{
                     opacity: 1;
-                    transition:ease-in-out 0.6s;
+                    transform: scale(1);
+                    transition:0.4s;
                 }
         }
         
