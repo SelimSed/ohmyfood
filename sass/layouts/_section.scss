@@ -54,7 +54,7 @@
                 margin-bottom: 10px;
                 display: flex;
                 justify-content: space-between;
-                width: 290px;
+                width: 310px;
                 height: 59px;
                 margin-right: auto;
                 margin-left: auto;
@@ -73,6 +73,9 @@
                         transition: 0.4s;
                         rotate: 720deg;
                         }
+                    }
+                    .resto__carte__menu__ligne__left{
+                            width: 55%;
                     }
                 }
                 @keyframes fade{

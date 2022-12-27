@@ -136,19 +136,25 @@ button {
 .resto__carte__title {
   font-family: "Shrikhand", cursive;
 }
-.resto__carte__coeur {
+.resto__carte .fa-heart-empty {
   font-size: 25px;
   padding-right: 10px;
 }
-.resto__carte__coeur--solid i {
+.resto__carte .fa-heart-solid {
   background: linear-gradient(to top, #9356DC, #FF79DA);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  transition: transform 0.5s;
-  transform: scale(0.1);
+  opacity: 0;
 }
-.resto__carte__coeur--solid i:hover {
-  transform: scale(1);
+.resto__carte .fa-stack:hover {
+  transition: ease-in-out 0.6s;
+}
+.resto__carte .fa-stack:hover .fa-heart-empty {
+  opacity: 0;
+}
+.resto__carte .fa-stack:hover .fa-heart-solid {
+  opacity: 1;
+  transition: ease-in-out 0.6s;
 }
 .resto__carte__menu__title {
   text-transform: uppercase;
@@ -164,12 +170,18 @@ button {
 .resto__carte__menu__ligne__left__text {
   font-size: 16px;
   padding-bottom: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .resto__carte__menu__ligne__left__text--2 {
   font-family: "Roboto", sans-serif;
   font-size: 13px;
   font-weight: 100;
   height: 59px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .resto__carte__menu__ligne__left__text--3 {
   font-family: "Roboto", sans-serif;
@@ -183,6 +195,9 @@ button {
   margin-left: auto;
   padding: 10px;
   padding-right: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 h4 {
@@ -454,7 +469,7 @@ h4 {
   margin-bottom: 10px;
   display: flex;
   justify-content: space-between;
-  width: 290px;
+  width: 310px;
   height: 59px;
   margin-right: auto;
   margin-left: auto;
@@ -473,6 +488,9 @@ h4 {
   background-color: white;
   transition: 0.4s;
   rotate: 720deg;
+}
+.resto__carte__menu__ligne:hover .resto__carte__menu__ligne__left {
+  width: 55%;
 }
 @keyframes fade {
   0% {
