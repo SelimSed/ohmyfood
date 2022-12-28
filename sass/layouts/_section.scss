@@ -145,11 +145,6 @@
         &__menu{
             display: flex;
             justify-content: center;
-            &__ligne{
-                &__left{
-                margin-right: 10px;
-                }
-            }
             &__bloc{
                 display: flex;
                 flex-direction: column;

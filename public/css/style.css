@@ -585,9 +585,6 @@ h4 {
     display: flex;
     justify-content: center;
   }
-  .resto__carte__menu__ligne__left {
-    margin-right: 10px;
-  }
   .resto__carte__menu__bloc {
     display: flex;
     flex-direction: column;
