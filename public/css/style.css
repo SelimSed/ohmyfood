@@ -500,6 +500,7 @@ h4 {
   visibility: hidden;
   animation: fade;
   animation-duration: 2s;
+  animation-fill-mode: forwards;
 }
 .resto__carte__menu__ligne:hover .resto__carte__menu__ligne__check {
   width: 50px;
