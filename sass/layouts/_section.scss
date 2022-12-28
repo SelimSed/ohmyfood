@@ -59,9 +59,8 @@
                 margin-right: auto;
                 margin-left: auto;
                 cursor: pointer;
-                visibility: visible;
+                visibility: hidden;
                 animation: fade;
-                animation-delay: 0.2s;
                 animation-duration: 2s;
                 &:hover{
                     .resto__carte__menu__ligne__check{
@@ -86,6 +85,7 @@
                     100%{
                         opacity: 1;
                         top: 0px;
+                        visibility: visible;
                     }
                 }
                 
@@ -110,6 +110,15 @@
             }
         }
     }
+}
+.ligne--1{
+    animation-delay: 0.2s;
+}
+.ligne--2{
+    animation-delay: 0.4s;
+}
+.ligne--3{
+    animation-delay: 0.6s;
 }
 @media (min-width: 600px) and (max-width: 1023px){
     .resto__carte{
