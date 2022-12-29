@@ -418,11 +418,6 @@ h4 {
     margin-right: 10px;
   }
 }
-.resto__card__coeur {
-  position: absolute;
-  top: 170px;
-  left: 450px;
-}
 .resto__card__coeur .fa-heart-empty {
   font-size: 25px;
   padding-right: 10px;
@@ -600,11 +595,18 @@ h4 {
     margin-right: 10px;
   }
 }
-@media (min-width: 320px) and (max-width: 599px) {
+@media (max-width: 599px) {
   .resto__card__coeur {
-    top: 0px;
-    right: -100px;
+    right: 20px;
+    bottom: 20px;
     position: absolute;
+  }
+}
+@media (min-width: 600px) {
+  .resto__card__coeur {
+    position: absolute;
+    top: 170px;
+    left: 450px;
   }
 }
 .resto__button {
