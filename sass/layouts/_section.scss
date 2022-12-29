@@ -1,6 +1,6 @@
 .section{
-    background-color: $colour-gray;
     padding: 10px;
+    max-width: 1200px;
         @media (min-width: 600px){
         display: flex;
         flex-wrap: wrap;
@@ -8,6 +8,9 @@
         margin-left: auto;
         justify-content: center;
         }
+}
+.section--bloc{
+    background-color: $colour-gray;
 }
 .resto{
     &__card{
@@ -154,6 +157,13 @@
         }
     }
 }
+@media (min-width: 320px) and (max-width: 599px){
+    .resto__card__coeur{
+        top: 0px; right: -100px;
+        position: absolute;
+    }
+}
+
 .resto__button{
     background-color: $colour-secondaire;
     font-size: 13px;

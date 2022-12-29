@@ -20,9 +20,11 @@ button{
         padding-top: 25px;
         padding-bottom: 20px;
         margin: 0%;
-        margin-left: 20px;
+        padding-left: 20px;
         background-color: white;
-        max-width: 1000px;
+        max-width: 1024px;
+        margin-left: auto;
+        margin-right: auto;
     }
     &__numbers{
         color: $colour-primaire;
@@ -35,8 +37,10 @@ button{
     padding-top: 25px;
     padding-bottom: 20px;
     margin: 0%;
-    margin-left: 20px;
-    background-color: $colour-gray;
+    padding-left: 20px;
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .resto{
     &__card{
